@@ -1,0 +1,15 @@
+echo # Windows System Garbage > .gitignore
+echo Thumbs.db >> .gitignore
+echo Ehthumbs.db >> .gitignore
+echo Desktop.ini >> .gitignore
+echo $RECYCLE.BIN/ >> .gitignore
+echo *.lnk >> .gitignore
+echo # Python & Editor Caches >> .gitignore
+echo __pycache__/ >> .gitignore
+echo *.pyc >> .gitignore
+echo .vscode/ >> .gitignore
+echo .idea/ >> .gitignore
+
+git add .gitignore
+git commit -m "Optimization: Added strict .gitignore profile to filter out system registry files"
+git push origin main
